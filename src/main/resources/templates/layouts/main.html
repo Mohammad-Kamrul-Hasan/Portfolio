@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+	xmlns:th="http://www.thymeleaf.org">
+
+	<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+	<title layout:title-pattern="$CONTENT_TITLE  $DECORATOR_TITLE"> :: Portfolio</title>
+
+	<!--  Compiled and minified CSS from WebJar-->
+	<link rel="stylesheet"
+	href="webjars/bootstrap/4.1.1/css/bootstrap.min.css"
+	th:href="@{/webjars/bootstrap/4.1.1/css/bootstrap.min.css}" />
+
+
+  </head>
+
+  <body class="text-center">
+
+    <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+      <header class="masthead mb-auto">
+        <div class="inner">
+          <h3 class="masthead-brand">Cover</h3>
+          <nav class="nav nav-masthead justify-content-center">
+            <a class="nav-link active" href="#">Home</a>
+            <a class="nav-link" href="#">About Me</a>
+            <a class="nav-link" href="#">Contact</a>
+          </nav>
+        </div>
+      </header>
+      
+    	<div layout:fragment="content">
+		<!--Page content goes here-->
+	
+		</div>
+
+	<script src="webjars/jquery/3.3.1/jquery.min.js"
+		th:src="@{webjars/jquery/3.3.1/jquery.min.js}"></script>
+	<script src="webjars/bootstrap/4.1.1/js/bootstrap.min.js"
+		th:src="@{webjars/bootstrap/4.1.1/js/bootstrap.min.js}"></script>
+	</div>
+	
+	<!-- FOOTER -->
+	<footer class="mastfoot mt-auto">
+        <div class="inner">
+		<hr />
+
+		<p>
+			&copy; 2018 Portfolio &middot; <a href="#">Privacy</a> &middot; <a
+				href="#">Terms</a>
+		</p>
+		</div>
+	</footer>
+  </body>
+</html>

@@ -1,0 +1,38 @@
+ <!DOCTYPE html>
+	<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:th="http://www.thymeleaf.org"
+	xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+	layout:decorator="layouts/main">
+
+	<head>
+
+	<title>Personal</title>
+
+	<link rel="stylesheet" href="css/cover.css"
+	th:href="@{/css/cover.css}" />
+
+	</head>
+
+  <body>
+	
+	<div layout:fragment="content">
+		
+		<div class="container">
+    
+		<div class="image-placeholder">
+   			<h4>image placeholder text</h4>
+		</div>
+			
+        <h1 class="cover-heading">HELLO</h1>
+        <p class="lead">My name is Mohammad Kamrul Hasan</p>
+        <p class="lead">
+          <a href="#" class="btn btn-lg btn-secondary">Learn more about me</a>
+        </p>
+      	
+      	</div>     	
+     	
+    </div>
+     
+  </body>
+  
+</html>
